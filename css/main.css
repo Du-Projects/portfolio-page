@@ -1,0 +1,8 @@
+@font-face {
+    font-family: Gugi;
+    src: url(font/gugi/Gugi-Regular.ttf)
+}
+
+h1 {
+    font-family: Gugi;
+}
