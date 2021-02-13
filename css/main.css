@@ -3,6 +3,28 @@
     src: url(font/gugi/Gugi-Regular.ttf)
 }
 
-h1 {
+h1, h2, h3, h4, h5, h6 {
     font-family: Gugi;
+}
+
+.title.is-2 {
+    color: #2d3142;
+}
+
+.content.is-medium {
+    color: #4F5D75;
+}
+
+.button.is-danger {
+    background-color: #EF8354;
+    color: #2D3142;
+}
+
+.button.is-danger:hover, .button.is-danger.is-hovered {
+    background-color: #2D3142;
+    color: #EF8354;
+}
+
+.line {
+    border-bottom: 2px solid #D5D7D7;
 }
