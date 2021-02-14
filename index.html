@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="has-navbar-fixed-top">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -13,16 +13,24 @@
     <div class="columns">
       <div class="column is-2"></div>
       <div class="column is-7">
-        <nav>
-          <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#resume">Resume</a></li>
-            <li><a href="#my-project">My Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
+        <nav
+          class="navbar is-fixed-top"
+          role="navigation"
+          aria-label="main navigation"
+        >
+          <div class="column is-2"></div>
+          <div class="column is-7">
+            <div class="navbar-menu is-active">
+              <a class="navbar-item is-tab" href="#resume">Resume</a>
+              <a class="navbar-item is-tab" href="#about">About</a>
+              <a class="navbar-item is-tab" href="#my-project">Projects</a>
+              <a class="navbar-item is-tab" href="#contact">Contact</a>
+            </div>
+          </div>
+          <div class="column is-3"></div>
         </nav>
-        <header class="section">
-          <section>
+        <header>
+          <section class="section">
             <figure>
               <img
                 sizes="(max-width: 880px) 100vw, 880px"
@@ -37,26 +45,28 @@
                 alt=""
               />
             </figure>
-            <h1>Name LastName</h1>
-            <h4>Developer</h4>
+            <div>
+              <h1>Name LastName</h1>
+              <h4>Developer</h4>
+            </div>
+            <address>
+              <div>
+                <p>Phone:</p>
+                <a href="tel:+12345678900">+1 (234) 567-8900</a>
+              </div>
+              <div>
+                <p>E-mail:</p>
+                <a href="mailto:webmaster@example.com">webmaster@example.com</a>
+              </div>
+              <div>
+                <ul>
+                  <li><a href="#">Twitter</a></li>
+                  <li><a href="#">Linkedin</a></li>
+                  <li><a href="#">GitHub</a></li>
+                </ul>
+              </div>
+            </address>
           </section>
-          <address>
-            <div>
-              <p>Phone:</p>
-              <a href="tel:+12345678900">+1 (234) 567-8900</a>
-            </div>
-            <div>
-              <p>E-mail:</p>
-              <a href="mailto:webmaster@example.com">webmaster@example.com</a>
-            </div>
-            <div>
-              <ul>
-                <li><a href="#">Twitter</a></li>
-                <li><a href="#">Linkedin</a></li>
-                <li><a href="#">GitHub</a></li>
-              </ul>
-            </div>
-          </address>
         </header>
         <main>
           <!-- Presentation - Start -->
@@ -184,9 +194,9 @@
           </section>
           <!-- Resume - End -->
 
-          <!-- My projects - Start -->
+          <!-- Projects - Start -->
           <section class="section" id="my-project">
-            <h2>My Projects</h2>
+            <h2 class="title line">Projects</h2>
             <nav>
               <ul>
                 <li>
@@ -322,10 +332,10 @@
               </article>
             </div>
           </section>
-          <!-- My projects - End -->
+          <!-- Projects - End -->
         </main>
         <footer class="section" id="contact">
-          <h2>Contact</h2>
+          <h2 class="title line">Contact</h2>
           <address>
             <div>
               <p>Phone:</p>

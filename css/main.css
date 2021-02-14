@@ -1,30 +1,119 @@
 @font-face {
-    font-family: Gugi;
-    src: url(font/gugi/Gugi-Regular.ttf)
+  font-family: Gugi;
+  src: url(font/gugi/Gugi-Regular.ttf);
 }
 
-h1, h2, h3, h4, h5, h6 {
-    font-family: Gugi;
+html {
+  background-color: #ebebeb;
+}
+
+.columns {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.column {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.column .navbar-menu {
+  padding: 0;
+}
+
+.navbar-menu a:first-of-type {
+  padding-left: 0;
+}
+
+.navbar {
+  background-color: #4f5d75;
+}
+
+.navbar-item {
+  color: #ebebeb;
+  font-size: 1.25rem;
+}
+
+.navbar-item.is-tab:hover {
+  color: #ef8354;
+  border-bottom-color: #ef8354;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.navbar {
+  font-family: Gugi;
+}
+
+@media screen and (max-width: 1023px) {
+  .column {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  .navbar-menu {
+    padding: 0;
+  }
+  .navbar-menu.is-active {
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .navbar-item {
+    font-size: 1rem;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+/* For iPad and Surface Duo */
+@media screen and (min-width: 539px) and (max-width: 1022px) {
+  .navbar-menu.is-active {
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+  .navbar-item {
+    font-size: 1.25rem;
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+  }
+}
+
+.section {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.section > h2 {
+  margin-top: 1%;
 }
 
 .title.is-2 {
-    color: #2d3142;
+  color: #2d3142;
 }
 
 .content.is-medium {
-    color: #4F5D75;
+  color: #4f5d75;
 }
 
 .button.is-danger {
-    background-color: #EF8354;
-    color: #2D3142;
+  background-color: #ef8354;
+  color: #2d3142;
 }
 
-.button.is-danger:hover, .button.is-danger.is-hovered {
-    background-color: #2D3142;
-    color: #EF8354;
+.button.is-danger:hover,
+.button.is-danger.is-hovered {
+  background-color: #2d3142;
+  color: #ef8354;
 }
 
 .line {
-    border-bottom: 2px solid #D5D7D7;
+  border-bottom: 2px solid #d5d7d7;
 }
